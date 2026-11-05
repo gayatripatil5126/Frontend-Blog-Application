@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <a class="brand" href="index.html">BlogSpace</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+</header>
+
+<main class="editor-wrap">
+    <h1>Create Your Blog</h1>
+    <p>Share your thoughts with the world.</p>
+
+    <form id="blogForm" class="editor-card">
+
+        <label>Blog Title</label>
+        <input type="text" id="blogTitle"
+               placeholder="Enter blog title" required>
+
+        <label>Category</label>
+        <select id="blogCategory" required>
+            <option value="">Select Category</option>
+            <option>Technology</option>
+            <option>Education</option>
+            <option>Lifestyle</option>
+            <option>Travel</option>
+            <option>Personal</option>
+        </select>
+
+        <label>Short Description</label>
+        <input type="text" id="blogExcerpt"
+               placeholder="Enter description">
+
+        <label>Blog Content</label>
+        <textarea id="blogContent" rows="10"
+                  placeholder="Write your blog here..."
+                  required minlength="20"></textarea>
+
+        <button class="btn full" type="submit">
+            Publish Blog
+        </button>
+
+        <p id="blogMessage"></p>
+    </form>
+</main>
+
+<footer>© 2026 BlogSpace</footer>
+
+</body>
+</html>
